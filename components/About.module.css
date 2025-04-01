@@ -1,0 +1,171 @@
+.aboutSection {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionTitle {
+  color: #1a1a1a;
+  font-size: 2.8rem;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+.sectionTitle::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background: #007bff;
+  display: block;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.imageWrapper {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.profileImage {
+  border: 8px solid #fff;
+  box-shadow: 0 15px 30px rgba(0, 123, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.statusBadge {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0,123,255,0.3);
+}
+
+.intro {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  position:relative;
+  padding-left: 30px;
+  border-left: 4px solid #007bff;
+}
+
+.highlight {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #1a1a1a;
+  margin-bottom: 15px;
+}
+
+.studentFocus {
+  background: rgba(0,123,255,0.05);
+  border-radius: 15px;
+  padding: 25px;
+  margin: 25px 0;
+  border: 2px solid rgba(0,123,255,0.1);
+}
+
+.studentFocus h3 {
+  color: #2c3e50;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+}
+
+.studentFocus ul {
+  list-style: none;
+  padding: 0;
+}
+
+.studentFocus li {
+  margin-bottom: 12px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.goalBox {
+  background: #007bff;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 25px 0;
+  text-align: center;
+  font-weight: 600;
+  box-shadow: 0 10px 20px rgba(0,123,255,0.2);
+}
+
+.skillsCard {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  background: white;
+  position:relative;
+  z-index: 1;
+}
+
+.skillsCard::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 0%, rgba(0,123,255,0.05) 50%, transparent 100%);
+  z-index: -1;
+  animation: gradientRotate 15s infinite linear;
+}
+
+.skillItem {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  margin: 15px 0;
+  background: rgba(245, 245, 245, 0.5);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  transform: translateX(10px);
+  background: white;
+  box-shadow: 0 8px 25px rgba(0,123,255,0.1);
+}
+
+.skillIcon {
+  font-size: 2rem;
+  color: #007bff;
+  min-width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .profileImage {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .statusBadge {
+    font-size: 0.8rem;
+    padding: 6px 15px;
+  }
+}

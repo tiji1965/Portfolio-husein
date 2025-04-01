@@ -1,0 +1,69 @@
+.heroSection {
+  background: linear-gradient(rgba(0, 20, 50, 0.75), rgba(0, 20, 50, 0.9)), url('/images/hero-bg.jpg') center/cover no-repeat;
+  padding: 100px 0;
+  color: #ffffff;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.5);
+}
+
+.profilePhoto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.profileImage {
+  border: 5px solid #007bff;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.profileImage:hover {
+  transform: scale(1.15);
+  box-shadow: 0 12px 25px rgba(0, 123, 255, 0.6);
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.heroButton {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  background-color: #007bff;
+  border-radius: 25px;
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heroButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 123, 255, 0.5);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 70px 15px;
+  }
+
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .heroButton {
+    width: 80%;
+  }
+}

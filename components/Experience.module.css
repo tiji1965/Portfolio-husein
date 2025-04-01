@@ -1,0 +1,82 @@
+.experienceSection {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.experienceTitle {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 40px;
+}
+
+.experienceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.experienceItem {
+  position: relative;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experienceItem:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.experienceItem:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  color: #ffffff;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .experienceSection {
+    padding: 30px 0;
+  }
+
+  .experienceItem {
+    height: 200px;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+
+  .content p {
+    font-size: 0.85rem;
+  }
+}

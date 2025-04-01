@@ -1,0 +1,56 @@
+.header {
+  background-color: #212529; /* Couleur foncée élégante */
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.logoImage {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  object-fit: contain;
+  max-height: 80px; /* Assure une taille harmonieuse */
+  width: auto;
+}
+
+.logoImage:hover {
+  transform: scale(1.1);
+}
+
+.navLink {
+  color: #ffffff !important;
+  margin: 0 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out, border-bottom 0.2s ease-in-out;
+}
+
+.navLink:hover, .navLink:focus {
+  color: #0d6efd !important;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  color: #ffffff;
+}
+
+@media (max-width: 992px) {
+  .navLink {
+    margin-top: 10px;
+    text-align: center;
+    border-bottom: none;
+  }
+
+  .navLink:hover {
+    border-bottom: none;
+  }
+
+  .navbar-collapse {
+    background-color: rgba(33, 37, 41, 0.95);
+    padding: 15px;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,80 @@
+.certificationsSection {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.sectionTitle {
+  color: #343a40;
+  font-size: 2.5rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #007bff;
+  margin: 10px auto 0;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 123, 255, 0.3);
+}
+
+.cardBody {
+  padding: 30px;
+}
+
+.icon {
+  color: #007bff;
+  font-size: 4rem;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-weight: 700;
+  color: #343a40;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 1rem;
+}
+
+.ctaButton {
+  margin-top: 30px;
+  padding: 10px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .icon {
+    font-size: 3rem;
+  }
+  
+  .cardBody {
+    padding: 20px;
+  }
+}
